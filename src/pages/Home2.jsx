@@ -1,5 +1,5 @@
 import React from 'react';
-import manImage from '../assets/Webhouseindia-banner.png';
+import manImage from '../assets/webhouseindia-banner.png';
 
 const Home2 = () => {
   return (
