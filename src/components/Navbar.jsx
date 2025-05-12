@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaPaperPlane, FaHome } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/Webhouseindia-logo.png';
+import logo from '../assets/webhouseindia-logo.png';
 
 const Navbar = () => {
 
