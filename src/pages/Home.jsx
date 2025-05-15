@@ -8,6 +8,7 @@ import Home5 from '../pages/Home5.jsx';
 import Home6 from '../pages/Home6.jsx';
 import TrustedBrand from '../pages/TrustedBrand.jsx';
 import TechnologyStack from '../pages/TechnologyStack.jsx';
+import ProposalSection from '../pages/ProposalSection.jsx';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -82,6 +83,9 @@ const Home = () => {
 
        <hr className="border-t-2 border-dashed border-gray-300" />
       <TrustedBrand/>
+
+
+        <ProposalSection/>
 
         <TechnologyStack/> 
 

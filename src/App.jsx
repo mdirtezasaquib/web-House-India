@@ -9,6 +9,7 @@ import Home6 from './pages/Home6';
 import TrustedBrand from './pages/TrustedBrand';
 import Footer from './components/Footer';
 import TechnologyStack from './pages/TechnologyStack';
+import ProposalSection from './pages/ProposalSection';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/" element={<Home6 />} />
         <Route path="/" element={<TrustedBrand />} />
         <Route path="/" element={<TechnologyStack/>} />
+        <Route path="/" element={<ProposalSection/>} />
 
 
 

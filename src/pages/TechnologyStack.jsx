@@ -5,8 +5,8 @@ export default function TechnologyStack() {
   return (
     <section className="bg-white py-16 px-4 md:px-20">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
-        {/* Left Side Text Content */}
-        <div className="flex-1">
+        
+        <div className="w-full lg:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Technology Stack</h2>
 
           <p className="text-gray-600 mb-4">
@@ -20,35 +20,43 @@ export default function TechnologyStack() {
             </span>
           </p>
 
-          {/* Bottom Left Icons (2 Cards) */}
-          <div className="flex gap-6 mt-6">
-            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6 hover:scale-105 transition w-32 h-32">
-              <FaNodeJs size={50} className="text-green-500" />
-              <p className="mt-2 text-sm font-medium">NodeJs</p>
+        
+          <div className="flex gap-8 mt-6">
+            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-8 hover:scale-105 transition w-40 h-40 hover:bg-blue-600">
+              <FaNodeJs size={60} className="text-green-500" />
+              <p className="mt-3 text-base font-medium">NodeJs</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6 hover:scale-105 transition w-32 h-32">
-              <SiLaravel size={50} className="text-red-500" />
-              <p className="mt-2 text-sm font-medium">Laravel</p>
+            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-8 hover:scale-105 transition w-40 h-40  hover:bg-orange-500">
+              <SiLaravel size={60} className="text-red-500" />
+              <p className="mt-3 text-base font-medium">Laravel</p>
             </div>
           </div>
         </div>
 
-        {/* Right Side Vertical Icons (3 Cards) */}
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6 hover:scale-105 transition w-32 h-32">
-            <SiVuedotjs size={50} className="text-green-400" />
-            <p className="mt-2 text-sm font-medium">VueJs</p>
+        
+        <div className="w-full lg:w-1/2 relative flex justify-center items-center h-[400px]">
+
+          <div className="absolute top-0 left-0">
+            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-8 hover:scale-105 transition w-40 h-40">
+              <SiVuedotjs size={60} className="text-green-400" />
+              <p className="mt-3 text-base font-medium">VueJs</p>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6 hover:scale-105 transition w-32 h-32">
-            <SiReact size={50} className="text-blue-400" />
-            <p className="mt-2 text-sm font-medium">ReactJs</p>
+          <div className="absolute top-0 right-0">
+            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-8 hover:scale-105 transition w-40 h-40">
+              <SiReact size={60} className="text-blue-400" />
+              <p className="mt-3 text-base font-medium">ReactJs</p>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6 hover:scale-105 transition w-32 h-32">
-            <SiMysql size={50} className="text-blue-500" />
-            <p className="mt-2 text-sm font-medium">MySQL</p>
+
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+            <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-8 hover:scale-105 transition w-40 h-40">
+              <SiMysql size={60} className="text-blue-500" />
+              <p className="mt-3 text-base font-medium">MySQL</p>
+            </div>
           </div>
         </div>
       </div>
