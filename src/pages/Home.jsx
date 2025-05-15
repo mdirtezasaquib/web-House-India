@@ -3,6 +3,11 @@ import { FaWhatsapp, FaPhoneAlt, FaTelegramPlane, FaPaperPlane, FaBolt, FaTimes,
 import firstImage from '../assets/webFirst.png';
 import Home2 from '../pages/Home2.jsx';
 import Home3 from '../pages/Home3.jsx';
+import Home4 from '../pages/Home4.jsx';
+import Home5 from '../pages/Home5.jsx';
+import Home6 from '../pages/Home6.jsx';
+import TrustedBrand from '../pages/TrustedBrand.jsx';
+import TechnologyStack from '../pages/TechnologyStack.jsx';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -17,13 +22,13 @@ const Home = () => {
       <div className="fixed right-4 bottom-1/18 flex flex-col space-y-3 z-50 items-end">
         {isOpen && (
           <>
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600">
+            <a href="https://wa.me/9135595758" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600">
               <FaWhatsapp size={20} />
             </a>
-            <a href="tel:+919999999999" className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
+            <a href="tel:+919135595758" className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
               <FaPhoneAlt size={20} />
             </a>
-            <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" className="bg-sky-500 text-white p-3 rounded-full shadow-lg hover:bg-sky-600">
+            <a href="https://t.me/@saquibcoder" target="_blank" rel="noopener noreferrer" className="bg-sky-500 text-white p-3 rounded-full shadow-lg hover:bg-sky-600">
               <FaTelegramPlane size={20} />
             </a>
           </>
@@ -68,6 +73,19 @@ const Home = () => {
       <hr className="border-t-2 border-dashed border-gray-300" />
 
       <Home3/>  
+
+      <Home4/>
+
+      <Home5/>
+
+      <Home6/>
+
+       <hr className="border-t-2 border-dashed border-gray-300" />
+      <TrustedBrand/>
+
+        <TechnologyStack/> 
+
+       <hr className="border-t-2 border-dashed border-gray-300" /> 
 
     </div>
   );

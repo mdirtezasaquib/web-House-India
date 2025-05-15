@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaLaptop, FaShoppingCart, FaBriefcase, FaMobileAlt, FaChartLine, FaPalette, FaGoogle } from "react-icons/fa";
+import { FaArrowRight, FaLaptop, FaShoppingCart, FaBriefcase, FaMobileAlt, FaPalette, FaGoogle } from "react-icons/fa";
 
 const services = [
   {

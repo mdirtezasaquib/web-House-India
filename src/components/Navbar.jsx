@@ -123,7 +123,7 @@ const Navbar = () => {
           </div>
 
         
-          <button className="flex items-center bg-orange-500 text-white px-4 py-2 rounded-md shadow hover:bg-orange-600 mt-3 w-30 justify-center ">
+          <button className="flex items-center bg-orange-500 text-white px-4 py-2 rounded-md shadow hover:bg-orange-600 mt-3 w-34 justify-center ">
             <FaPaperPlane className="mr-2" /> Let's Talk
           </button>
         </div>
