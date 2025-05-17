@@ -10,6 +10,10 @@ import TrustedBrand from './pages/TrustedBrand';
 import Footer from './components/Footer';
 import TechnologyStack from './pages/TechnologyStack';
 import ProposalSection from './pages/ProposalSection';
+import Work from './pages/Work';
+import RatingsAndReviews from './pages/RatingAndReviews';
+import BusinessBoostSection from './pages/BusinessBoostSection';
+import Contact from './pages/Contact';
 
 
 const App = () => {
@@ -27,12 +31,14 @@ const App = () => {
         <Route path="/" element={<TrustedBrand />} />
         <Route path="/" element={<TechnologyStack/>} />
         <Route path="/" element={<ProposalSection/>} />
+         <Route path="/" element={<BusinessBoostSection/>} />
+        <Route path="/work" element={<Work/>} />
+        <Route path="/reviews" element={<RatingsAndReviews/>} />
+        <Route path="/contact" element={<Contact/>} />
+        
 
 
-
-        {/* <Route path="/reviews" element={<Reviews />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} /> */}
+       
       </Routes>
 
       <Footer/>
