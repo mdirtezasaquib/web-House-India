@@ -19,12 +19,12 @@ const Navbar = () => {
   ];
 
   const servicesLinks = [
-    'Website Design',
-    'E-commerce Website',
-    'Web Application',
-    'Mobile App Development',
-    'Graphic Designing',
-    'SEO / SEM',
+    ' › Website Design',
+    ' › E-commerce Website',
+    ' › Web Application',
+    ' › Mobile App Development',
+    ' › Graphic Designing',
+    ' › SEO / SEM',
   ];
 
   const isActive = (path) => location.pathname === path;
