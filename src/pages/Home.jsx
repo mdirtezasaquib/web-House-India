@@ -45,11 +45,11 @@ const Home = () => {
 
       <div className="container mx-auto px-4 py-16 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         <div className="w-full pl-0 lg:pl-20 lg:w-1/2 lg:text-left text-left">
-          <h1 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 leading-normal">
-            Webhouseindia - Your Trusted Website Design Company in Patna, Bihar
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 leading-normal">
+            Webhouseindia - Your Trusted Website Design Company in Patna, Bihar...
           </h1>
-          <p className="text-gray-700 text-sm md:text-base mb-6 leading-7 md:leading-8">
-            We are <strong>Web Designers, Developers & Digital Marketing Company From Patna</strong> dedicated to creative and results-driven web-based solutions using the latest trends and technologies
+          <p className="mt-10 text-gray-800 text-lg md:text-xl bg-white/70 backdrop-blur-sm px-4 py-2 rounded shadow-lg animate-bounce">
+            We’re a <span className="text-blue-600 font-semibold">killer team of Designers, Developers & Digital Experts</span> from Patna — crafting stunning websites that don’t just look good, but perform like beasts.
           </p>
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0 justify-center lg:justify-start">
             <button className="flex items-center bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-600 shadow transition w-50">

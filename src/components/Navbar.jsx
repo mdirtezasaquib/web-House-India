@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaPaperPlane, FaHome } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/webhouseindia-logo.png';
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const location = useLocation();
@@ -32,13 +31,30 @@ const Navbar = () => {
 
   return (
     <header className="w-full shadow-md sticky top-0 z-50 bg-white">
-      
-      <div className="bg-blue-700 text-white text-center text-sm py-2 font-semibold">
-        Start Your Online Journey Today ! 
+
+    
+      <div className="overflow-hidden bg-blue-700 text-white text-sm font-semibold py-2 relative">
+        <div style={{
+          display: 'inline-block',
+          whiteSpace: 'nowrap',
+          animation: 'marquee 12s linear infinite',
+        }}>
+          <span style={{ marginRight: '2rem' }}>Start Your Online Journey Today !</span>
+          <span style={{ marginRight: '2rem' }}>Start Your Online Journey Today !</span>
+          <span style={{ marginRight: '2rem' }}>Start Your Online Journey Today !</span>
+          <span style={{ marginRight: '2rem' }}>Start Your Online Journey Today !</span>
+        </div>
       </div>
 
+
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+      `}</style>
+
       <div className="flex items-center justify-between px-4 py-5 md:px-10">
-        
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Webhouse India" className="w-60 lg:w-76 h-11.5 pl-0 lg:pl-20" />
         </div>
@@ -55,7 +71,6 @@ const Navbar = () => {
             </Link>
           ))}
 
-          
           <div className="relative group">
             <button className="text-black font-medium flex items-center hover:text-orange-500">
               Services <span className="ml-1">▼</span>
@@ -73,19 +88,16 @@ const Navbar = () => {
             </div>
           </div>
 
-    
           <button className="flex items-center bg-orange-500 text-white px-4 py-2 rounded-md shadow hover:bg-orange-600 transition">
             <FaPaperPlane className="mr-2" /> Let's Talk
           </button>
         </nav>
-
 
         <div className="md:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
-    
       {isOpen && (
         <div className="md:hidden bg-white shadow-md px-4 py-3 space-y-2">
           {navLinks.map((link) => (
@@ -101,7 +113,6 @@ const Navbar = () => {
             </Link>
           ))}
 
-          
           <div className="mt-2">
             <button onClick={toggleMobileServices} className="text-black font-medium flex items-center justify-between w-full">
               Services <span>{isMobileServicesOpen ? '▲' : '▼'}</span>
@@ -122,8 +133,7 @@ const Navbar = () => {
             )}
           </div>
 
-        
-          <button className="flex items-center bg-orange-500 text-white px-4 py-2 rounded-md shadow hover:bg-orange-600 mt-3 w-34 justify-center ">
+          <button className="flex items-center bg-orange-500 text-white px-4 py-2 rounded-md shadow hover:bg-orange-600 mt-3 w-34 justify-center">
             <FaPaperPlane className="mr-2" /> Let's Talk
           </button>
         </div>
